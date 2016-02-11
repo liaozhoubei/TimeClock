@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="timer">
+        <attr name="circleBackground" format="color"/>
+        <attr name="arcColor" format="color"/>
+        <attr name="top" format="dimension"/>
+        <attr name="bottom" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="contourWidth" format="dimension"/>
+        <attr name="textSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>

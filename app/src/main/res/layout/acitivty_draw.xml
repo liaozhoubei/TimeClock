@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:timer="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+                >
+    <com.example.bert.timeclock.ClockView
+        android:layout_weight="1"
+        android:id="@+id/clockView"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        timer:textSize="30dp"
+        timer:top="15dp"
+        timer:radius="200dp"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="4.5">
+
+    </ListView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            />
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/start_button"
+            android:text="pause"
+            />
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pause_button"
+            android:text="clear"
+            />
+
+        <Button
+            android:id="@+id/record_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/clear_button"
+            android:text="record"
+            />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
